@@ -15,5 +15,6 @@ jobs:
           echo "environment-kubeconfig:" ${KUBECONFIG}
       - name: Tests
         run: |
+          chmod +x test.sh
           ./test.sh
 
